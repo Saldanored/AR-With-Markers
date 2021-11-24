@@ -6,13 +6,16 @@
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
       <a-marker preset="hiro">
-        <a-entity
+        <a-box color="tomato" depth="2" height="4" width="0.5">
+          <a-entity
           position="0 0 0"
           rotate
           scale="0.2 0.2 0.2"
           rotation = "100 180 250"
           gltf-model="scene.gltf"
         ></a-entity>
+        </a-box>
+
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
